@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eu Te Amo</title>
+
+    <style>
+
+        body {
+
+            background: linear-gradient(to right, red, black);
+
+            font-family: Arial, sans-serif;
+
+            color: white;
+
+            margin: 0;
+
+            padding: 0;
+
+            overflow-x: hidden;
+
+        }
+
+        .page {
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-height: 100vh;
+
+            padding: 20px;
+
+            box-sizing: border-box;
+
+            text-align: center;
+
+        }
+
+        h1 {
+
+            font-size: 22px;
+
+            margin-top: 20px;
+
+        }
+
+        a {
+
+            display: inline-block;
+
+            background-color: red;
+
+            padding: 12px 24px;
+
+            font-size: 18px;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 10px;
+
+            margin-top: 30px;
+
+        }
+
+        a:hover {
+
+            background-color: darkred;
+
+        }
+
+        .hidden {
+
+            display: none;
+
+        }
+
+        .text-container {
+
+            max-width: 90%;
+
+            text-align: left;
+
+            font-size: 18px;
+
+            line-height: 1.6;
+
+            margin-top: 20px;
+
+        }
+
+        .heart {
+
+            font-size: 40px;
+
+            animation: moveHeart 5s infinite;
+
+            position: absolute;
+
+        }
+
+        @keyframes moveHeart {
+
+            0% { top: 100%; left: 50%; transform: translateX(-50%); }
+
+            50% { top: 10%; left: 30%; transform: translateX(-50%); }
+
+            100% { top: 100%; left: 70%; transform: translateX(-50%); }
+
+        }
+
+        .romantic-phrase {
+
+            position: absolute;
+
+            font-size: 20px;
+
+            animation: movePhrase 10s infinite;
+
+        }
+
+        @keyframes movePhrase {
+
+            0% { top: 10%; opacity: 1; }
+
+            50% { top: 40%; opacity: 0; }
+
+            100% { top: 70%; opacity: 1; }
+
+        }
+
+        .big-heart {
+
+            font-size: 80px;
+
+            animation: pulse 2s infinite;
+
+        }
+
+        @keyframes pulse {
+
+            0%, 100% { transform: scale(1); }
+
+            50% { transform: scale(1.2); }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Página Inicial -->
+
+    <div id="page1" class="page">
+
+        <div class="big-heart">❤️</div>
+
+        <h1>Eu só queria te falar o quanto eu te amo</h1>
+
+        <a href="#" onclick="showPage2()">Clique aqui para continuar</a>
+
+    </div>
+
+    <!-- Página Romântica -->
+
+    <div id="page2" class="page hidden">
+
+        <h1>O quanto eu te amo</h1>
+
+        <div class="text-container">
+
+            <p>Minha vida mudou completamente desde que você entrou nela. Antes, tudo parecia incompleto, mas você apareceu e, de repente, tudo fez sentido. Eu me sinto uma pessoa muito mais feliz, realizada e apaixonada ao seu lado. Cada momento que passo contigo é único e me faz perceber o quão importante você é para mim. Você é a razão do meu sorriso, a razão do meu coração bater mais forte, e a razão pela qual tudo parece ter mais brilho.</p>
+
+            <p>Eu te amo com todas as forças do meu ser, e nada no mundo pode mudar isso. Eu agradeço todos os dias por ter você na minha vida. Cada gesto, cada olhar, cada palavra tua tem um significado especial para mim. Você é a pessoa que me completa, que me entende como ninguém mais consegue, e por isso sou eternamente grato. A cada dia ao seu lado, sou mais consciente do quanto sou abençoado por te ter. Você trouxe paz ao meu coração e alegria à minha alma.</p>
+
+            <p>Antes de você, eu não sabia o que era a verdadeira felicidade. E então você apareceu, e tudo mudou. Seu amor me preenche, me faz querer ser uma pessoa melhor. Você me dá forças para enfrentar qualquer obstáculo, me inspira a continuar buscando os meus sonhos e a te fazer feliz. Você é minha motivação, minha inspiração. Juntos, podemos conquistar o mundo, porque o nosso amor é a força mais poderosa que existe.</p>
+
+            <p>Quando olho para o futuro, só consigo enxergar você ao meu lado, caminhando comigo em todos os momentos. Prometo que estarei ao seu lado sempre, nas alegrias e nas dificuldades. O que quer que a vida nos reserve, sei que juntos seremos imbatíveis. Eu te amo mais do que as palavras podem expressar, e esse amor só cresce a cada dia. Você é a melhor coisa que já me aconteceu, e sou grato por cada segundo ao seu lado.</p>
+
+            <p>Eu só quero que você saiba, do fundo do meu coração, que meu amor por você é imensurável. Cada vez que te vejo, meu coração acelera, e um sorriso espontâneo aparece no meu rosto. O simples fato de estar contigo me faz sentir uma paz indescritível. Eu te amo mais do que você pode imaginar, e não há nada que me faça querer te perder.</p>
+
+        </div>
+
+        <div class="romantic-phrase" style="animation-delay: 0s;">Eu sou completamente apaixonado por você!</div>
+
+        <div class="romantic-phrase" style="animation-delay: 3s;">Com você, tudo se torna mais bonito.</div>
+
+        <div class="romantic-phrase" style="animation-delay: 6s;">Você é o meu amor eterno.</div>
+
+        <div class="heart" style="animation-delay: 0s;">❤️</div>
+
+        <div class="heart" style="animation-delay: 1s;">❤️</div>
+
+        <div class="heart" style="animation-delay: 2s;">❤️</div>
+
+        <div class="heart" style="animation-delay: 3s;">❤️</div>
+
+    </div>
+
+    <script>
+
+        function showPage2() {
+
+            document.getElementById("page1").classList.add("hidden");
+
+            document.getElementById("page2").classList.remove("hidden");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
